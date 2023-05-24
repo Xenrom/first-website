@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+
+	<title>shop now!!</title>
+	<link rel = "stylesheet" href = "second css.css">
+</head>
+
+<body>
+
+	<ul>
+	
+		<li><a href = #home class = "link" >home</a></li>
+		<li><a href = #about class = "link">about</a></li>
+		<li><a href = #cart class = "link">cart</a></li>
+		<li class = "dropdown">
+			<a href = #home class = "dropbtn">drop</a>
+			<div class = "dropdown-content">
+				<a href = #home>home</a>
+				<a href = #about>about</a>
+			</div>
+		</li>
+		
+	</ul>
+	
+	
+	<img src = "Rectangle 34.png" class = "picture" id = "pic">
+	<img src = "Rectangle 34.png" class = "description">
+
+	<button onclick = "next_image()" id = "n" disabled>  > </button>
+	<button onclick = "prev_image()" id = "p" disabled>  < </button>
+	
+	<button class = "next" onclick = "next_item()">next</button>
+	<button class = "prev" onclick = "prev_item()">prev</button>
+	<button class = "menu">menu</button>	
+	
+	
+	<p class = "name" id = "name">hello world</p>
+	
+	<div>
+	
+		<button id = "increase" onclick = "add()" disabled>+</button>
+		<p id = "number">0</p>
+		<button id = "decrease" onclick = "minus()" disabled>-</button>
+	</div>
+	
+	
+	<a id = "purchase" href = "https://www.anytimefitness.ph/gyms/PH-0050/paranaque-metro-manila/"><img id = "cart" src = "cart.png"></a>
+	<script>
+
+		
+		const ice_Cream = [["ice cream1.jpg", "ice cream2.jpg", "ice cream3.jpg"], "ice cream"]
+		const donuts = [["donut1.jpg", "donut2.jpg", "donut3.jpg"], "donut"]
+		const items = [ice_Cream, donuts]
+		let human = 0;
+		let man = 0;
+		let item_number = 0;
+		
+		function next_item()
+		{
+			if ( man < 1){
+					man += 1;
+				}
+				
+			human = 0;
+			document.getElementById("pic").src = items[man][0][human];
+			document.getElementById("name").innerHTML = items[man][1];
+			document.getElementById("n").disabled = false;
+			document.getElementById("p").disabled = false;
+			document.getElementById("increase").disabled = false;
+			document.getElementById("decrease").disabled = false;
+		}
+		
+		function prev_item()
+		{
+			if ( man > 0){
+				man -= 1;
+			}
+		
+			human = 0;
+			document.getElementById("pic").src = items[man][0][human];
+			document.getElementById("name").innerHTML = items[man][1];
+			document.getElementById("n").disabled = false;
+			document.getElementById("p").disabled = false;
+			document.getElementById("increase").disabled = false;
+			document.getElementById("decrease").disabled = false;
+		}
+		
+		
+		function next_image()
+		{
+			if ( human < 2 ){
+				human += 1;
+				}
+				
+			document.getElementById("pic").src = items[man][0][human];
+		
+		}
+		
+		function prev_image()
+		{
+			if ( human > 0 ){
+				human -= 1;
+				}
+				
+			document.getElementById("pic").src = items[man][0][human];
+		
+		}
+		
+		function add()
+		{
+			item_number += 1;
+			
+			document.getElementById("number").innerHTML = item_number;
+		
+		}
+		
+		function minus()
+		{
+			if ( document.getElementById("number").innerHTML > 0 ){
+				item_number -= 1;
+				}
+			document.getElementById("number").innerHTML = item_number;
+		}
+	
+	</script>
+
+
+</body>
