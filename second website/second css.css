@@ -1,0 +1,299 @@
+body
+{
+	background-color: #FEFAE0
+}
+
+
+
+
+
+ul
+{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #606C38;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+li
+{
+	float: left;
+}
+
+li.r 
+{
+	float: right;
+}
+
+li a.link
+{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	margin: 0px;
+	border: 1px;
+	background-color: #4D5828;
+}
+
+li a, .dropbtn
+{
+	display: inline-block;
+	background-color: #4D5828;
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+}
+
+li.dropdown
+{
+	display: inline-block;
+}
+
+.dropdown-content
+{
+	top: 60px;
+	left: 236px;
+	min-width: 160px;
+	position: absolute;
+	z-index: 1;	
+	background-color: white;
+	display: none;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 82px;
+}
+
+.dropdown-content a
+{	
+	color: white;
+	font-family: Big One;
+	display: block;
+}
+
+
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}
+
+
+
+
+li a:hover
+{
+	background-color: #343C1C;
+}
+
+li a.about
+{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+	
+
+
+
+
+img.picture
+{
+	position: absolute;
+	top: 55px;
+	right: 10px;
+	
+	margin: 20px;
+	width: 360px;
+	height: 400px;
+	
+	
+}	
+
+img.description
+{
+	position: absolute;
+	top: 90px;
+	right: 430px;
+	
+	width: 260px;
+	height: 360px;
+	
+
+}
+
+
+button#n
+{
+	position: absolute;
+	top: 76px;
+	right: 33px;
+	
+	width: 60px;
+	height: 394px;
+	
+	opacity: 0.0;
+	transition: opacity .5s;
+
+	
+}
+
+button#n:hover
+{
+	opacity: 0.3;
+}
+
+button#p
+{
+	position: absolute;
+	top: 76px;
+	right: 327px;
+	
+	width: 60px;
+	height: 394px;
+	
+	opacity: 0.0;
+	transition: opacity .5s;
+
+}
+
+button#p:hover
+{
+	opacity: 0.3;
+}
+
+
+
+button.next 
+{
+	position: absolute;
+	top: 490px;
+	right: 33px;
+	
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	
+	font-family: Big One;
+	background-color: white;
+	box-shadow: 2px 2px;
+}
+
+button.next:hover
+{
+	background-color: #E8E6E6;
+}
+	
+button.prev 
+{
+	position: absolute;
+	top: 490px;
+	right: 307px;
+	
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	
+	font-family: Big One;
+	background-color: white;
+	box-shadow: 2px 2px;
+}
+
+button.prev:hover
+{
+	background-color: #E8E6E6;
+}
+
+button.menu 
+{
+	position: absolute;
+	top: 490px;
+	right: 170px;
+	
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	
+	font-family: Big One;
+	background-color: white;
+	box-shadow: 2px 2px;
+}
+
+button.menu:hover
+{
+	background-color: #E8E6E6;
+}
+	
+	
+p.name
+{
+	position: absolute;
+	top: 90px;
+	left: 125px;
+	
+	word-wrap: break-word;
+	background-color: white;
+	padding: 15px;
+	color: black;
+	font-family: Big One;
+	width: 100em;
+	max-width: 260px;
+	font-size: 160%;
+	text-align: center;
+	box-shadow: 2px 2px;
+}
+
+
+div
+{
+	position: absolute;
+	display: inline;
+	
+	top: 380px;
+	left: 150px;
+}
+
+div button
+{
+	display: inline;
+	background-color: #8D99AE;
+	
+	width: 40px;
+	height: 40px;
+	border: none;
+	box-shadow: 2px 2px;
+}
+
+div button:hover
+{
+	background-color: #7A828F;
+}
+
+div p
+{
+	display: inline;
+	background-color: white;
+	font-family: Big One;
+	
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 2px 2px;
+}
+
+
+a#purchase
+{
+	position: absolute;
+	top: 430px;
+	left: 220px;
+}
+
+img#cart
+{
+	width: 80px;
+	height: 80px;
+}
